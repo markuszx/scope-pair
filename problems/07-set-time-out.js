@@ -18,7 +18,21 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 ***********************************************************************/
 
-// Your code here
+const funcTimer = (time, func) => {
+//Write a function named `funcTimer(time, func)` that will allow you to hand
+return setTimeout(func, time)
+//in a function and a number representing milliseconds. The `funcTimer` should use
+}
+//the global.setTimeout function to invoke the passed in function in `time` amount
+//of seconds.
+
+//Examples:
+
+function partyFunc () {
+  console.log("Party time!")
+}
+
+funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
