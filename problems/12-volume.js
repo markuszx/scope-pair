@@ -13,7 +13,18 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here
+function recVolume(height) {
+  return function(length) {
+    return function(width) {
+      return height * length * width;
+    }
+  }
+}
+
+let func1 = recVolume(10);
+let func2 = func1(20);
+let total = func2(3);
+console.log(total)
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
